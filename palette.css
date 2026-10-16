@@ -1,0 +1,44 @@
+:root {
+  /* Palette: mauve / copper / blue
+   500 = your base colours. 100 = backgrounds, 300 = borders/hover,
+   700 = text & buttons, 900 = deep accents.
+ 
+   Contrast (WCAG):
+   - 700 shades on --bg pass AA for body text (5.7–7.0:1)
+   - 500 shades on white: mauve 4.8 (AA), blue 3.8 and copper 3.6
+     (large text / icons only, not body text)
+   - --ink on --bg: 13.3:1
+*/
+
+  /* Neutrals */
+  --bg: #f6f1ec;
+  --surface: #ffffff;
+  --ink: #2b2530;
+
+  /* Mauve */
+  --mauve-100: #f2e6ed;
+  --mauve-300: #ca9ab8;
+  --mauve-500: #a75788;
+  --mauve-700: #754062;
+  --mauve-900: #4b2b42;
+
+  /* Copper (the pushed-orange brown) */
+  --copper-100: #f4ebe3;
+  --copper-300: #d5ae90;
+  --copper-500: #b97846;
+  --copper-700: #815537;
+  --copper-900: #51372b;
+
+  /* Blue */
+  --blue-100: #e6edf2;
+  --blue-300: #9ab8ca;
+  --blue-500: #5788a7;
+  --blue-700: #415f76;
+  --blue-900: #2f3d4d;
+
+  /* Roles: change these, not the raw colours */
+  --color-primary: var(--blue-700);
+  --color-accent: var(--copper-500);
+  --color-highlight: var(--mauve-500);
+  --color-link: var(--mauve-700);
+}

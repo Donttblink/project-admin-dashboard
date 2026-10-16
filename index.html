@@ -4,68 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Actor's WorkDesk</title>
+    <link rel="stylesheet" href="palette.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <div class="sidebar">
-        <h1>Dashboard</h1>
+        <h1>
+          <img
+            src="./public/icons/monitor-dashboard.svg"
+            width="55"
+            height="55"
+          />Dashboard
+        </h1>
         <ul class="menu">
           <li>
             <img
               src="./public/icons/home-outline.svg"
-              width="24"
-              height="24"
+              width="35"
+              height="35"
             />Home
           </li>
           <li>
             <img
               src="./public/icons/card-account-details-outline.svg"
-              width="24"
-              height="24"
+              width="35"
+              height="35"
             />Profile
           </li>
           <li>
             <img
               src="./public/icons/message.svg"
-              width="24"
-              height="24"
+              width="35"
+              height="35"
             />Messages
           </li>
           <li>
-            <img src="./public/icons/clock.svg" width="24" height="24" />History
+            <img src="./public/icons/clock.svg" width="35" height="35" />History
           </li>
           <li>
             <img
               src="./public/icons/format-list-checks.svg"
-              width="24"
-              height="24"
+              width="35"
+              height="35"
             />Tasks
           </li>
           <li>
             <img
               src="./public/icons/account-group.svg"
-              width="24"
-              height="24"
+              width="35"
+              height="35"
             />Communities
           </li>
         </ul>
         <ul class="tools">
           <li>
-            <img src="./public/icons/cog.svg" width="24" height="24" />Settings
+            <img src="./public/icons/cog.svg" width="35" height="35" />Settings
           </li>
           <li>
             <img
               src="./public/icons/help-box.svg"
-              width="24"
-              height="24"
+              width="35"
+              height="35"
             />Support
           </li>
           <li>
             <img
               src="./public/icons/shield-lock.svg"
-              width="24"
-              height="24"
+              width="35"
+              height="35"
             />Privacy
           </li>
         </ul>
@@ -73,37 +80,50 @@
 
       <div class="header">
         <div class="nav-bar">
-          <search class="search-container">
-            <form action="#" method="GET" class="search-form">
-              <button type="submit">
-                <img
-                  src="./public/icons/magnify.svg"
-                  alt=""
-                  width="24"
-                  height="24"
+          <div class="search">
+            <search class="search-container">
+              <form action="#" method="GET" class="search-form">
+                <button type="submit">
+                  <img
+                    src="./public/icons/magnify.svg"
+                    alt=""
+                    width="30"
+                    height="30"
+                  />
+                </button>
+                <input
+                  type="search"
+                  class="site-search"
+                  placeholder="Search Projects..."
                 />
-              </button>
-              <input
-                type="search"
-                id="site-search"
-                name="site-search"
-                placeholder="Search Projects..."
-              />
-            </form>
-          </search>
+              </form>
+            </search>
+          </div>
 
           <div class="profile">
             <button>
-              <img src="./public/icons/bell-ring.svg" width="24" height="24" />
+              <img src="./public/icons/bell-ring.svg" width="50" height="30" />
             </button>
-            <img class="profile-pic" src="#" alt="Profile picture" />
+            <img
+              class="profile-pic"
+              src="./public/donttblinkprofilepic.png"
+              width="70"
+              height="60"
+              alt="Profile picture"
+            />
             <h2 class="profile-name">Jonny LeRose</h2>
           </div>
         </div>
 
         <div class="action-bar">
           <div class="profile-handle">
-            <img class="profile-pic" src="#" alt="Profile picture" />
+            <img
+              class="profile-pic"
+              src="./public/donttblinkprofilepic.png"
+              width="100"
+              height="100"
+              alt="Profile picture"
+            />
             <div class="handle-welcome">
               <p class="greeting">Hi there,</p>
               <h1 class="handle-name">Jonny Lerose(@jonny)</h1>
@@ -120,106 +140,160 @@
         <div class="project-view">
           <h2>Your Projects</h2>
           <div class="project">
-            <h3>Hamlet</h3>
-            <p>
-              To be or not to be, that is the question, whether tis nobler in
-              the mind to suffer the slings and arrows of outrageous fortune or
-              to take arms against a sea of troubles and by opposing, end them.
-            </p>
-            <img
-              src="./public/icons/star-plus-outline.svg"
-              width="24"
-              height="24"
-            /><img
-              src="./public/icons/eye-plus-outline.svg"
-              width="24"
-              height="24"
-            /><img src="./public/icons/connection.svg" width="24" height="24" />
+            <div class="project-content">
+              <h3>Hamlet</h3>
+              <p>
+                To be or not to be, that is the question, whether tis nobler in
+                the mind to suffer the slings and arrows of outrageous fortune
+                or to take arms against a sea of troubles and by opposing, end
+                them.
+              </p>
+            </div>
+            <div class="project-links">
+              <img
+                src="./public/icons/star-plus-outline.svg"
+                width="24"
+                height="24"
+              /><img
+                src="./public/icons/eye-plus-outline.svg"
+                width="24"
+                height="24"
+              /><img
+                src="./public/icons/connection.svg"
+                width="24"
+                height="24"
+              />
+            </div>
           </div>
           <div class="project">
-            <h3>Hamlet</h3>
-            <p>
-              To be or not to be, that is the question, whether tis nobler in
-              the mind to suffer the slings and arrows of outrageous fortune or
-              to take arms against a sea of troubles and by opposing, end them.
-            </p>
-            <img
-              src="./public/icons/star-plus-outline.svg"
-              width="24"
-              height="24"
-            /><img
-              src="./public/icons/eye-plus-outline.svg"
-              width="24"
-              height="24"
-            /><img src="./public/icons/connection.svg" width="24" height="24" />
+            <div class="project-content">
+              <h3>Hamlet</h3>
+              <p>
+                To be or not to be, that is the question, whether tis nobler in
+                the mind to suffer the slings and arrows of outrageous fortune
+                or to take arms against a sea of troubles and by opposing, end
+                them.
+              </p>
+            </div>
+            <div class="project-links">
+              <img
+                src="./public/icons/star-plus-outline.svg"
+                width="24"
+                height="24"
+              /><img
+                src="./public/icons/eye-plus-outline.svg"
+                width="24"
+                height="24"
+              /><img
+                src="./public/icons/connection.svg"
+                width="24"
+                height="24"
+              />
+            </div>
           </div>
           <div class="project">
-            <h3>Hamlet</h3>
-            <p>
-              To be or not to be, that is the question, whether tis nobler in
-              the mind to suffer the slings and arrows of outrageous fortune or
-              to take arms against a sea of troubles and by opposing, end them.
-            </p>
-            <img
-              src="./public/icons/star-plus-outline.svg"
-              width="24"
-              height="24"
-            /><img
-              src="./public/icons/eye-plus-outline.svg"
-              width="24"
-              height="24"
-            /><img src="./public/icons/connection.svg" width="24" height="24" />
+            <div class="project-content">
+              <h3>Hamlet</h3>
+              <p>
+                To be or not to be, that is the question, whether tis nobler in
+                the mind to suffer the slings and arrows of outrageous fortune
+                or to take arms against a sea of troubles and by opposing, end
+                them.
+              </p>
+            </div>
+            <div class="project-links">
+              <img
+                src="./public/icons/star-plus-outline.svg"
+                width="24"
+                height="24"
+              /><img
+                src="./public/icons/eye-plus-outline.svg"
+                width="24"
+                height="24"
+              /><img
+                src="./public/icons/connection.svg"
+                width="24"
+                height="24"
+              />
+            </div>
           </div>
           <div class="project">
-            <h3>Hamlet</h3>
-            <p>
-              To be or not to be, that is the question, whether tis nobler in
-              the mind to suffer the slings and arrows of outrageous fortune or
-              to take arms against a sea of troubles and by opposing, end them.
-            </p>
-            <img
-              src="./public/icons/star-plus-outline.svg"
-              width="24"
-              height="24"
-            /><img
-              src="./public/icons/eye-plus-outline.svg"
-              width="24"
-              height="24"
-            /><img src="./public/icons/connection.svg" width="24" height="24" />
+            <div class="project-content">
+              <h3>Hamlet</h3>
+              <p>
+                To be or not to be, that is the question, whether tis nobler in
+                the mind to suffer the slings and arrows of outrageous fortune
+                or to take arms against a sea of troubles and by opposing, end
+                them.
+              </p>
+            </div>
+            <div class="project-links">
+              <img
+                src="./public/icons/star-plus-outline.svg"
+                width="24"
+                height="24"
+              /><img
+                src="./public/icons/eye-plus-outline.svg"
+                width="24"
+                height="24"
+              /><img
+                src="./public/icons/connection.svg"
+                width="24"
+                height="24"
+              />
+            </div>
           </div>
           <div class="project">
-            <h3>Hamlet</h3>
-            <p>
-              To be or not to be, that is the question, whether tis nobler in
-              the mind to suffer the slings and arrows of outrageous fortune or
-              to take arms against a sea of troubles and by opposing, end them.
-            </p>
-            <img
-              src="./public/icons/star-plus-outline.svg"
-              width="24"
-              height="24"
-            /><img
-              src="./public/icons/eye-plus-outline.svg"
-              width="24"
-              height="24"
-            /><img src="./public/icons/connection.svg" width="24" height="24" />
+            <div class="project-content">
+              <h3>Hamlet</h3>
+              <p>
+                To be or not to be, that is the question, whether tis nobler in
+                the mind to suffer the slings and arrows of outrageous fortune
+                or to take arms against a sea of troubles and by opposing, end
+                them.
+              </p>
+            </div>
+            <div class="project-links">
+              <img
+                src="./public/icons/star-plus-outline.svg"
+                width="24"
+                height="24"
+              /><img
+                src="./public/icons/eye-plus-outline.svg"
+                width="24"
+                height="24"
+              /><img
+                src="./public/icons/connection.svg"
+                width="24"
+                height="24"
+              />
+            </div>
           </div>
           <div class="project">
-            <h3>Hamlet</h3>
-            <p>
-              To be or not to be, that is the question, whether tis nobler in
-              the mind to suffer the slings and arrows of outrageous fortune or
-              to take arms against a sea of troubles and by opposing, end them.
-            </p>
-            <img
-              src="./public/icons/star-plus-outline.svg"
-              width="24"
-              height="24"
-            /><img
-              src="./public/icons/eye-plus-outline.svg"
-              width="24"
-              height="24"
-            /><img src="./public/icons/connection.svg" width="24" height="24" />
+            <div class="project-content">
+              <h3>Hamlet</h3>
+              <p>
+                To be or not to be, that is the question, whether tis nobler in
+                the mind to suffer the slings and arrows of outrageous fortune
+                or to take arms against a sea of troubles and by opposing, end
+                them.
+              </p>
+            </div>
+            <div class="project-links">
+              <img
+                src="./public/icons/star-plus-outline.svg"
+                width="24"
+                height="24"
+              /><img
+                src="./public/icons/eye-plus-outline.svg"
+                width="24"
+                height="24"
+              /><img
+                src="./public/icons/connection.svg"
+                width="24"
+                height="24"
+              />
+            </div>
           </div>
         </div>
 
@@ -243,7 +317,7 @@
                   traffic of new users.
                 </p>
               </div>
-              <div class="announcement">
+              <div class="announcement" id="oldest">
                 <h4>Site Maintenance</h4>
                 <p>
                   We are going to be shutting the backend down for the weekend
@@ -257,24 +331,48 @@
             <h2>Trending</h2>
             <div class="trending-feed">
               <div class="trending-user">
-                <img src="#" />
-                <p class="user-handle">@tegan</p>
-                <p class="user-project">Lady Macbeth</p>
+                <img
+                  src="./public/donttblinkprofilepic.png"
+                  width="70"
+                  height="70"
+                />
+                <div class="user-name">
+                  <p class="user-handle">@tegan</p>
+                  <p class="user-project">Lady Macbeth</p>
+                </div>
               </div>
               <div class="trending-user">
-                <img src="#" />
-                <p class="user-handle">@tegan</p>
-                <p class="user-project">Lady Macbeth</p>
+                <img
+                  src="./public/donttblinkprofilepic.png"
+                  width="70"
+                  height="70"
+                />
+                <div class="user-name">
+                  <p class="user-handle">@tegan</p>
+                  <p class="user-project">Lady Macbeth</p>
+                </div>
               </div>
               <div class="trending-user">
-                <img src="#" />
-                <p class="user-handle">@tegan</p>
-                <p class="user-project">Lady Macbeth</p>
+                <img
+                  src="./public/donttblinkprofilepic.png"
+                  width="70"
+                  height="70"
+                />
+                <div class="user-name">
+                  <p class="user-handle">@tegan</p>
+                  <p class="user-project">Lady Macbeth</p>
+                </div>
               </div>
               <div class="trending-user">
-                <img src="#" />
-                <p class="user-handle">@tegan</p>
-                <p class="user-project">Lady Macbeth</p>
+                <img
+                  src="./public/donttblinkprofilepic.png"
+                  width="70"
+                  height="70"
+                />
+                <div class="user-name">
+                  <p class="user-handle">@tegan</p>
+                  <p class="user-project">Lady Macbeth</p>
+                </div>
               </div>
             </div>
           </div>
